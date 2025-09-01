@@ -1,0 +1,229 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #222;
+  padding: 20px 0;
+  color: white;
+}
+h1 {
+  font-size: 30px;
+  color:yellow;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 20px;
+  letter-spacing: 2px;
+  text-decoration:none;
+}
+.logo img {
+  height: 150px;  /* Adjust size as needed */
+  width: auto;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+	
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: url('download.jpg') no-repeat center center/cover;
+  color: purple;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 0;
+  background: #f4f4f4;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features {
+  padding: 60px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+.footer-links a{
+	color:#fff;
+	margin:0 10px;
+	text-decoration:none;
+}
+
+.footer-social a{
+	color:#fff;
+	margin:0 5px;
+	text-decoration:none;
+}
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+  
+  h1 {
+  font-size: 28px;
+  color:green;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+}
+
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 32px;
+  }
+}
